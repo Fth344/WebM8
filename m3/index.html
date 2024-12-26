@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .submenu {
+            display: none;
+            background-color: rgb(255, 0, 0);
+            color: white; 
+        }
+        .active {
+            display: block !important; 
+        }
+    </style>
+    <script>
+        function toggleSubmenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.classList.toggle('active');
+        }
+
+        function toggleFasilitas() {
+            const menu = document.getElementById('fasilitas-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-200">
+  <header class="bg-black text-white">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <div class="flex items-center">
+        <img alt="Hotel Logo" class="mr-4" height="50" src="flzhotel.jpg" width="50" />
+        <h1 class="text-2xl font-bold">BEST HOTEL (flzhotel)</h1>
+      </div>
+      
+      <div>
+        <img src="hotel.jpg" alt="Hotel Logo" height="50" width="200" />
+      </div>
+    </div>
+  </header>
+</body>
+
+</header>
+    <nav class="bg-red-700 text-white"> 
+        <div class="container mx-auto flex justify-start space-x-4 py-2">
+            <a class="hover:underline" href="index.html">Home</a>
+            <a class="hover:underline" href="rooms.html">Kamar</a>
+            <div class="relative group">
+                <a class="hover:underline cursor-pointer" onclick="toggleFasilitas()">Fasilitas</a>
+                <div id="fasilitas-menu" class="absolute hidden bg-red-600 text-white mt-2 rounded-lg shadow-lg w-40"> 
+                    <ul>
+                        <li class="hover:bg-red-500 px-4 py-2"><a href="fasilitas.html">Petualangan Alam</a></li>
+                        <li class="relative hover:bg-red-500 px-4 py-2 cursor-pointer">
+                            <a class="block" onclick="toggleSubmenu('kolam-renang')">Kolam Renang</a>
+                            <div id="kolam-renang" class="absolute hidden submenu text-white mt-0 ml-40 rounded-lg shadow-lg w-40">
+                                <ul>
+                                    <li class="hover:bg-red-400 px-4 py-2"><a href="fasilitas.html">Sumber Air Panas</a></li>
+                                    <li class="relative hover:bg-red-400 px-4 py-2 cursor-pointer">
+                                        <a class="block" onclick="toggleSubmenu('kolam-anak-dewasa')">Kolam Anak dan Dewasa</a>
+                                        <div id="kolam-anak-dewasa" class="absolute hidden submenu text-white mt-0 ml-40 rounded-lg shadow-lg w-40">
+                                            <ul>
+                                                <li class="hover:bg-red-300 px-4 py-2"><a href="fasilitas.html">Reguler</a></li>
+                                                <li class="hover:bg-red-300 px-4 py-2"><a href="fasilitas.html">Premium</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover:bg-red-500 px-4 py-2"><a href="fasilitas.html#pusat-kebugaran">Pusat Kebugaran</a></li>
+                        <li class="hover:bg-red-500 px-4 py-2"><a href="fasilitas.html#Ruang">Ruang Rapat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="hover:underline" href="pesan sekarang.html">Pesan Sekarang</a>
+        </div>
+    </nav>
+    <main class="container mx-auto mt-4">
+        <div class="flex">
+            <aside class="w-1/4 bg-red-700 p-4"> 
+                <div class="mb-4">
+                    <iframe allowfullscreen="" frameborder="0" height="200" src="https://www.youtube.com/embed/qemqQHaeCYo" width="100%"></iframe>
+                </div>
+                <div class="mb-4">
+                    <iframe allowfullscreen="" frameborder="0" height="200" src="https://www.youtube.com/embed/9I2xta0ahIs" width="100%"></iframe>
+                </div>
+                <div class="mb-4">
+                    <iframe allowfullscreen="" frameborder="0" height="200" src="https://www.youtube.com/embed/aA75jtnwqps" width="100%"></iframe>
+                </div>
+                <img alt="Gambar di bawah video" class="w-full h-auto mt-4" src="owner.jpg"/>
+                <h1 class="text-2xl font-bold text-white">
+                  Owner :
+                  Fathih Arya F.
+                </h1>                
+            </aside>
+            <section class="w-3/4 grid grid-cols-3 gap-4 p-4">
+                <img alt="Room Image 1" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/5vBadcIauxZqGl7xixSLFJ91TQdqf7ed6ADAKHr0fccfLqwOB.jpg" width="300"/>
+                <img alt="Room Image 2" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/UKYGiijQQ95CI9TyQP6ZC0VMe01dDBdeWbqVnukusEmGjKsTA.jpg" width="300"/>
+                <img alt="Room Image 3" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/Ahh50WyWpXoiKVTfRUlIU40eiHZfuGS8LZMeHk7JL1sMMqwOB.jpg" width="300"/>
+                <img alt="Room Image 4" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/fKUKtHMd3B3nUaBJBPiu8eiwfJBVcIiT0ZBx7ehcEAKGMqwOB.jpg" width="300"/>
+                <img alt="Room Image 5" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/wLXUZaShEgYrO9SCgmAXJAYRiDD2qIsm6pnPfJxcPK6iRF2JA.jpg" width="300"/>
+                <img alt="Room Image 6" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/H7vT4dLvJsLDMhmRbZUGTUgmPSMIsm9LeyZPTf2PpfbQGVYnA.jpg" width="300"/>
+                <img alt="Room Image 7" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/Sb2jtTqW29rNExmzDBIfaYkIB42ru4ZLvv68hYxktd1kRF2JA.jpg" width="300"/>
+                <img alt="Room Image 8" class="w-full h-auto" height="200" src="https://storage.googleapis.com/a1aa/image/OKHHRWqcheS5GqpW97FCa0Wpf7rhxBzmdSVOGBkLPgqKjKsTA.jpg" width="300"/>
+                <img alt="Room Image 8" class="w-full h-auto" height="200" src="jelek.jpg" width="300"/>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-red-800 text-white text-center py-4"> 
+        <p>
+            © 2024 Queen Best Hotel!
+        </p>
+    </footer>
+</body>
+</html>

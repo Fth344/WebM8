@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pemesanan</h1>
+        <form>
+            <div class="form-group">
+                <label for="id-pemesan">Id Pemesan:</label>
+                <input type="text" id="id-pemesan" value="1">
+            </div>
+            <div class="form-group">
+                <label for="nama-pemesan">Nama Pemesan:</label>
+                <input type="text" id="nama-pemesan">
+            </div>
+            <div class="form-group">
+                <label for="nomor-identitas">Nomor Identitas:</label>
+                <input type="text" id="nomor-identitas">
+            </div>
+            <div class="form-group">
+                <label for="tipe-kamar">Tipe Kamar:</label>
+                <select id="tipe-kamar">
+                    <option>--Pilih--</option>
+                    <option>STANDAR</option>
+                    <option>DELUXE</option>
+                    <option>FAMILY</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="harga">Harga:</label>
+                <input type="text" id="harga">
+            </div>
+            <div class="form-group">
+                <label for="tanggal-pesan">Tanggal Pesan:</label>
+                <div class="input-group">
+                    <input type="text" id="tanggal-pesan" placeholder="dd/mm/yyyy">
+                    <span class="icon-calendar">&#x1F4C5;</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="durasi-menginap">Durasi Menginap:</label>
+                <div class="input-group">
+                    <input type="text" id="durasi-menginap">
+                    <span>Hari</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="breakfast">Termasuk Breakfast:</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="breakfast">
+                    <span>Ya</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="total-bayar">Total Bayar:</label>
+                <input type="text" id="total-bayar">
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn-save">Simpan</button>
+                <button type="reset" class="btn-reset">Batal</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
